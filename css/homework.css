@@ -1,0 +1,224 @@
+/* Пор. Week 3 Homework */
+/* https://github.com/Ruthenus/IT_STEP/blob/main/Week%203%20Homework/Week%203%20Homework.css */
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Панель для індикаторів (.REX640 p), керованих скриптом */
+.REX640 {
+  background-color: antiquewhite;
+  max-height: 750px;
+  width: 90vw;
+  max-width: 420px;
+  margin: 20px 0 0;
+  padding: 20px 0 25px 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Світлодіодні індикатори: opacity 0.4 для неактивних, 1.0 для активних
+(керується скриптом) */
+.REX640 p {
+  color: #01263a;
+  font-size: clamp(14px, 3.5vw, 20px);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  background-color: #a7aaad;
+  border: 10px solid #a7aaad;
+  border-radius: 30px;
+  height: clamp(22px, 4.5vw, 26px);
+  width: 80%;
+  max-width: 270px;
+  opacity: 0.4;
+  margin: 5px auto 5px 53px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Закоментовано: замінено подіями pointerenter/pointerleave у скрипті
+.REX640 p:hover {
+  opacity: 1.0;
+}
+*/
+
+/* Придушення попереджень WebStorm для динамічно використовуваних класів */
+
+/* stylelint-disable no-unused-selectors */
+.REX640 p.red {
+  background-color: #CC0000;
+  border: 10px solid #CC0000;
+  opacity: 1.0;
+  /* Скрипт додає клас red для червоної індикації (стан 1) */
+}
+
+/* stylelint-disable no-unused-selectors */
+.REX640 p.yellow {
+  background-color: #FFFF00;
+  border: 10px solid #FFFF00;
+  opacity: 1.0;
+  /* Скрипт додає клас yellow для жовтої індикації (стан 2) */
+}
+
+/* stylelint-disable no-unused-selectors */
+.REX640 p.green {
+  background-color: #66FF00;
+  border: 10px solid #66FF00;
+  opacity: 1.0;
+  /* Скрипт додає клас green для зеленої індикації (стан 3) */
+}
+
+/* stylelint-disable no-unused-selectors */
+.REX640 p.blinking {
+  animation: blinker 2s cubic-bezier(1.0, 0, 0, 1.0) infinite;
+  -webkit-animation: blinker 2s cubic-bezier(1.0, 0, 0, 1.0) infinite;
+  /* Скрипт додає клас blinking для миготіння активних індикаторів */
+}
+
+/* Анімація миготіння для класів red/yellow/green, керованих скриптом */
+@keyframes blinker {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes blinker {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 100px;
+}
+
+/* Кнопки для квітування (скидає всі індикатори) і тестування
+(змінює стан одного індикатора) */
+.acknowledge-button, .test-button {
+  background-color: #202020;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: clamp(14px, 3.5vw, 20px);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  line-height: normal;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 8px 0;
+  transition: background-color 0.3s;
+}
+
+/* Закоментовано: ефект наведення, може бути доданий скриптом
+.acknowledge-button:hover, .test-button:hover {
+  background-color: #02486b;
+}
+*/
+
+.ABB {
+  margin: 30px 0 20px;
+  color: #FF2400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(20px, 5vw, 40px);
+  font-weight: bolder;
+  line-height: 1.2;
+  text-align: center;
+  user-select: none;
+}
+
+footer {
+  position: relative;
+  margin: 20px 0 10px;
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(14px, 4vw, 16px);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  .REX640 {
+    margin: 10px 0 0;
+    padding: 15px 0 20px 20px;
+  }
+
+  .REX640 p {
+    margin-left: 20px;
+  }
+
+  .button-container {
+    margin: 10px 0 0;
+    align-items: center;
+  }
+
+  .ABB {
+    margin: 20px 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .REX640 {
+    width: 95vw;
+    max-width: 360px;
+    padding: 10px 0 15px 15px;
+  }
+
+  .REX640 p {
+    font-size: clamp(12px, 3vw, 16px);
+    height: clamp(20px, 4vw, 24px);
+    margin-left: 10px;
+  }
+
+  .acknowledge-button, .test-button {
+    padding: 10px 20px;
+    font-size: clamp(14px, 3.5vw, 16px);
+    margin: 6px 0;
+  }
+
+  .ABB {
+    font-size: clamp(16px, 4.5vw, 32px);
+    margin: 15px 0 10px;
+  }
+
+  footer {
+    font-size: clamp(10px, 2.5vw, 12px);
+    margin: 15px 0 5px;
+  }
+}
+
+/* stylelint-enable no-unused-selectors */
